@@ -40,7 +40,8 @@ export class PlanetaInfo extends React.Component {
             this.setState({
                 name: data.name,
                 climate: data.climate,
-                terrain: data.terrain
+                terrain: data.terrain,
+                filmes: data.films.length
             })
         }).catch((error)=>{
             console.log('O seguinte erro aconteceu: '+error)
@@ -62,6 +63,7 @@ export class PlanetaInfo extends React.Component {
                 <section name='info'>
                     <p>Clima: {this.state.climate}</p>
                     <p>Terreno: {this.state.terrain}</p>
+                    <p>Quantidade de filmes em que apareceu: {this.state.filmes}</p>
                 </section>
             </div>
         )
