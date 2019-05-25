@@ -1,0 +1,36 @@
+.container{
+    -moz-border-radius: 14px;
+    -webkit-border-radius: 14px;
+    border-radius: 14px;
+    background-color: #505050;
+    padding: 2vh;
+    font-size: 1rem;
+}
+.container-title{
+    background-color: rgb(92, 25, 25);
+    border-radius: 14px;
+    padding: 1ch;
+    font-family: 'Press Start 2P', cursive;
+}
+
+section > p {
+    background-color: rgb(63, 63, 63);
+    border-radius: 14px;
+    padding: 1ch;
+    margin: 2px;
+    font-family: 'Press Start 2P', cursive;
+}
+
+.button-planeta{
+    background-image: url(planeta.png);
+    border-radius: 14px;
+    padding: 1ch;
+    margin: 2px;
+    font-family: 'Press Start 2P', cursive;
+    color: aliceblue;
+    text-shadow: 2px 2px #000000;
+    background-size: 100px;
+    background-repeat: no-repeat;
+    background-color: #2d5f1959;
+    background-position: center;
+}

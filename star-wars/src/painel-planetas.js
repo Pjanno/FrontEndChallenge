@@ -1,5 +1,7 @@
 import React from 'react';
 import axios from 'axios';
+import './painel-planetas.css';
+import './planeta.png';
 
 export class PlanetaInfo extends React.Component {
 
@@ -12,6 +14,7 @@ export class PlanetaInfo extends React.Component {
             climate: null,
             terrain: null
         };
+        this.pegaPlanetaNovo = this.pegaPlanetaNovo.bind(this)
     }
 
     componentDidMount(){
@@ -56,8 +59,8 @@ export class PlanetaInfo extends React.Component {
 
     render() {
         return (
-            <div>
-                <section name='titulo'>
+            <div className="container">
+                <section name='titulo' className="container-title">
                     <h3>{this.state.name}</h3>
                 </section>
                 <section name='info'>
@@ -65,6 +68,9 @@ export class PlanetaInfo extends React.Component {
                     <p>Terreno: {this.state.terrain}</p>
                     <p>Quantidade de filmes em que apareceu: {this.state.filmes}</p>
                 </section>
+                <button className="button-planeta" onClick={this.pegaPlanetaNovo}>
+                    <p>Trocar Planeta!</p>
+                </button>
             </div>
         )
     }
